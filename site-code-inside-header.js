@@ -1,4 +1,3 @@
-<script>
 var nodesWithTemplates = [];
 const observer = new MutationObserver(function(mutations_list) {
 	mutations_list.forEach(function(mutation) {
@@ -11,4 +10,3 @@ const observer = new MutationObserver(function(mutations_list) {
 	});
 });
 observer.observe(document.querySelector("html"), { subtree: true, childList: true });
-</script>

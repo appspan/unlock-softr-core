@@ -1,4 +1,3 @@
-<script>
     var open_prototype = XMLHttpRequest.prototype.open,
     intercept_response = function(urlpattern, replacerCallback) {
        XMLHttpRequest.prototype.open = function() {
@@ -38,5 +37,3 @@
         });
         return JSON.stringify(json);
     });
-
-</script>
